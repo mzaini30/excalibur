@@ -21,10 +21,10 @@
 			<div class="col-sm mb-3">
 				<?php 
 					if(!$_GET['halaman']) {
-						include('halaman/index.php');
+						include('avalon/index.php');
 					} else {
 						if($_GET['halaman'] == 'tambah-database') {
-							include('halaman/tambah-database.php');
+							include('avalon/tambah-database.php');
 						}
 					}
 				?>
