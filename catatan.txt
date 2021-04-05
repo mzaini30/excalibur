@@ -9,3 +9,9 @@ reserved
 - id
 - kunci
 - db
+
+semua-data
+select * from [db]
+
+tambah
+insert into [db] (mau, makan) values ('[pertama]', '[kedua]')

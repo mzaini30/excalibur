@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "qs": "^6.10.1"
+  }
 }
