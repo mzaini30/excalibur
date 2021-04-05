@@ -7,9 +7,13 @@
 		$db->prepare($hapus)->execute();
 		$semuaPerintah = $_POST['data'];
 		$semuaPerintah = str_replace("[db]", 'database_' . $_GET['database'], $semuaPerintah);
-		$semuaPerintah = preg_replace("/\[([a-z0-9_]+)\]/i", 'kucing', $semuaPerintah);
+		$semuaPerintah = preg_replace("/\[([a-z0-9_]+)\]/i", '$_POST[\"$1\"]', $semuaPerintah);
 		$jadikanArray = explode("\n", $semuaPerintah);
 		var_dump($jadikanArray);
+		$arrayPisah = [];
+		// for ($i=0; $i < count($jadikanArray); $i = $i + 3) { 
+		// 	$arrayPisah[] = 
+		// }
 	}
 	if (!!$_GET['database']) {
 		$sql = 'select * from excalibur_ringkasan_sql where idDatabase = "' . $_GET['database'] . '"';
