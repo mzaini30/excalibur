@@ -1,0 +1,3 @@
+ca04a5e26b59240a3a022aa16ad3c0d0
+id, mau, makan
+delete from [db] where id = [id]
