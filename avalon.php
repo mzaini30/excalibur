@@ -16,6 +16,7 @@
 				<div class="list-group mb-3">
 					<a href="?halaman=tambah-database" class="list-group-item list-group-item-action">Tambah Database</a>
 					<a href="?halaman=olah-sql" class="list-group-item list-group-item-action">Olah SQL</a>
+					<a href="?halaman=contoh" class="list-group-item list-group-item-action">Contoh</a>
 				</div>
 				<?php if ($_GET['halaman'] == 'olah-sql'): ?>
 					<form action="">
@@ -39,6 +40,8 @@
 							include('avalon/tambah-database.php');
 						} elseif ($_GET['halaman'] == 'olah-sql') {
 							include('avalon/olah-sql.php');
+						} elseif ($_GET['halaman'] == 'contoh') {
+							include('avalon/contoh.php');
 						}
 					}
 				?>

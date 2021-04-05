@@ -36,7 +36,11 @@
 ?>
 <form action="" method="post">
 	<div class="mb-3">
-		<textarea id="" cols="30" rows="10" name="data" class="form-control elData"><?= $datanya ?></textarea>
+		<textarea id="" cols="30" placeholder="semua-data
+select * from [db]
+
+baru
+insert into [db] (nama) values ('[nama]')" rows="10" name="data" class="form-control elData"><?= $datanya ?></textarea>
 	</div>
 	<input type="submit" class="btn btn-success" value="Update">
 </form>

@@ -2,7 +2,7 @@
 	<div class="mb-3">
 		<input type="" value="<?= md5(rand()) ?>" name="tabel" class='d-none'>
 		<label for="">Masukkan Field</label>
-		<input type="text" class="form-control" required="" name="kolom">
+		<input type="text" class="form-control" placeholder="nama, alamat, kelas" required="" name="kolom">
 	</div>
 	<div class="mb-3">
 		<input type="submit" value='Buat' class="btn btn-success">
