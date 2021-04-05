@@ -6,7 +6,8 @@
 		$hapus = 'delete from excalibur_sql where idDatabase = "'. $_GET['database'] .'"';
 		$db->prepare($hapus)->execute();
 		$semuaPerintah = $_POST['data'];
-		$semuaPerintah = str_replace("[db]", 'kucing', $semuaPerintah);
+		$semuaPerintah = str_replace("[db]", 'database_' . $_GET['database'], $semuaPerintah);
+		$semuaPerintah = preg_replace("/\[([a-z0-9_]+)\]/i", 'kucing', $semuaPerintah);
 		$jadikanArray = explode("\n", $semuaPerintah);
 		var_dump($jadikanArray);
 	}

@@ -4,3 +4,8 @@ delete from [db] where id = [id]
 
 id: ca04a5e26b59240a3a022aa16ad3c0d0
 kunci: semua-data
+
+reserved
+- id
+- kunci
+- db
