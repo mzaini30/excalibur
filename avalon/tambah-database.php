@@ -35,3 +35,7 @@
 		// header('Location: ' . $_POST['tabel']);
 	}
 ?>
+
+<script>
+	document.title = 'Tambah Database'
+</script>

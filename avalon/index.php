@@ -1,1 +1,1 @@
-<p>Selamat datang di Excalibur</p>
+<?php header('Location: avalon.php?halaman=olah-sql') ?>

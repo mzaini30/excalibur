@@ -14,7 +14,6 @@
 		<div class="row">
 			<div class="col-sm-2 mb-3">
 				<div class="list-group mb-3">
-					<a href="avalon.php" class="list-group-item list-group-item-action">Beranda</a>
 					<a href="?halaman=tambah-database" class="list-group-item list-group-item-action">Tambah Database</a>
 					<a href="?halaman=olah-sql" class="list-group-item list-group-item-action">Olah SQL</a>
 				</div>
