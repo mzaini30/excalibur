@@ -7,7 +7,7 @@
 		$db->prepare($hapus)->execute();
 		$semuaPerintah = $_POST['data'];
 		$semuaPerintah = str_replace("[db]", 'database_' . $_GET['database'], $semuaPerintah);
-		$semuaPerintah = preg_replace("/\[([a-z0-9_]+)\]/i", '$_POST[\"$1\"]', $semuaPerintah);
+		// $semuaPerintah = preg_replace("/\[([a-z0-9_]+)\]/i", '\".$_POST[\"$1\"].\"', $semuaPerintah);
 		$semuaPerintah = preg_replace("/\r/", '', $semuaPerintah);
 		$jadikanArray = explode("\n", $semuaPerintah);
 		// var_dump($jadikanArray);
