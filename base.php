@@ -6,8 +6,6 @@ $password = 'kucing';
 $database = 'excalibur_database';
 
 $db = new PDO("mysql:host=" . $host . ";dbname=" . $database, $username, $password);
-header('Access-Control-Allow-Methods: GET, POST');
-header('Access-Control-Allow-Origin: *');
 function olah($sql, $db){
 	$stmt = $db->query($sql);
 	$survery = [];

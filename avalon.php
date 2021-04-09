@@ -34,7 +34,8 @@
 			<div class="col-sm mb-3">
 				<?php 
 					if(!$_GET['halaman']) {
-						include('avalon/index.php');
+						// include('avalon/index.php');
+						echo '<script>location.href="avalon.php?halaman=olah-sql"</script>';
 					} else {
 						if ($_GET['halaman'] == 'tambah-database') {
 							include('avalon/tambah-database.php');

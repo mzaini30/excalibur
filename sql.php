@@ -1,5 +1,7 @@
 <?php 
 	include('base.php');
+	header('Access-Control-Allow-Methods: GET, POST');
+	header('Access-Control-Allow-Origin: *');
 	if (!!$_POST) {
 		header('Content-Type: application/json');
 		$sql = '
