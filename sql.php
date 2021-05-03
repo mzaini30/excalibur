@@ -8,14 +8,14 @@
 			select perintah
 			from excalibur_sql
 			where
-				idDatabase = "'.$_POST['id'].'" and
-				kunci = "'.$_POST['kunci'].'"
+				idDatabase = '.$db->quote($_POST['id']).' and
+				kunci = '.$db->quote($_POST['kunci']).'
 		';
 		$hasil = olah($sql, $db);
 		$perintahnya = $hasil[0]['perintah'];
 		foreach ($_POST as $key => $value) {
 			// echo json_encode($key);
-			$perintahnya = preg_replace('/\['.$key.'\]/', $value, $perintahnya);
+			$perintahnya = preg_replace('/\['.$key.'\]/', $db->quote($value), $perintahnya);
 		}
 		// echo json_encode($perintahnya);
 		// echo json_encode($_POST);
