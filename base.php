@@ -15,5 +15,7 @@ function olah($sql, $db){
 	        array_push($a, $rows);
 	    }
 	} while ($stmt->nextRowset());
-	return $a[0];
+	if (count($a) > 0){
+	    return $a[0];
+	}
 }
