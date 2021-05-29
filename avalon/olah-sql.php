@@ -40,7 +40,7 @@
 select * from [db]
 
 baru
-insert into [db] (nama) values ('[nama]')" rows="10" name="data" class="form-control elData"><?= $datanya ?></textarea>
+insert into [db] (nama) values ([nama])" rows="10" name="data" class="form-control elData"><?= $datanya ?></textarea>
 	</div>
 	<input type="submit" class="btn btn-success" value="Update">
 </form>
