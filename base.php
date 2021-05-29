@@ -1,9 +1,9 @@
 <?php
 
 $host = 'localhost';
-$username = 'root';
-$password = 'kucing';
-$database = 'excalibur_database';
+$username = 'excalibur';
+$password = '0809894kali';
+$database = 'excalibur';
 
 $db = new PDO("mysql:host=" . $host . ";dbname=" . $database, $username, $password);
 function olah($sql, $db){
