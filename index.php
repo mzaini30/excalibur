@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Olah Data</title>
-	<link rel="stylesheet" href="tools/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/bootstrap.min.css">
 </head>
 <body>
 	<div class="container py-3">
@@ -34,15 +34,15 @@
 			<div class="col-sm mb-3">
 				<?php 
 					if(!$_GET['halaman']) {
-						// include('avalon/index.php');
+						// include('komponen/index.php');
 						echo '<script>location.href="?halaman=olah-sql"</script>';
 					} else {
 						if ($_GET['halaman'] == 'tambah-database') {
-							include('avalon/tambah-database.php');
+							include('komponen/tambah-database.php');
 						} elseif ($_GET['halaman'] == 'olah-sql') {
-							include('avalon/olah-sql.php');
+							include('komponen/olah-sql.php');
 						} elseif ($_GET['halaman'] == 'contoh') {
-							include('avalon/contoh.php');
+							include('komponen/contoh.php');
 						}
 					}
 				?>

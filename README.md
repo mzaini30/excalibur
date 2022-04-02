@@ -10,9 +10,9 @@ Sesuaikan pada file `base.php`:
 
 ```php
 $host = 'localhost';
-$username = 'excalibur';
-$password = '0809894kali';
-$database = 'excalibur';
+$username = 'username';
+$password = 'password';
+$database = 'database';
 ```
 
-Untuk lebih aman, ubah nama `index.php`.
+Untuk lebih aman, ubah nama `index.php`. Misal, diubah menjadi `kucing.php`, kemudian buatlah file `index.php` yang isinya kosong.
